@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Clean Blog - Start Bootstrap Theme</title>
+  <title>Devis en ligne</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -20,6 +20,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
   <!-- Getbootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -27,6 +28,7 @@
 
   <!-- Custom styles -->
   <link href="css/clean-blog.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 
 
 
@@ -65,15 +67,54 @@
       <div class="row justify-content-md-center">
         <div class="col-lg-12 col-md-8 mx-auto">
           <div class="site-heading">
-            <h1>SARL OISE BTP</h1>
+            <!-- <h1>SARL OISE BTP</h1> -->
             <span class="subheading">Faites construire VOTRE maison</span> 
           </div>
         </div>
         
-          <div class="col col-lg-4"><button class="btn btn-primary float-right" id="btnDevisSimu" > OPTENEZ UN DEVIS IMMEDIAT</button> </div>
-          <div class="col col-lg-4"><button class="btn btn-primary float-right" id="btnDevisPerso" > DEVIS PERSONNALISÉ</button></div>
-      </div>
+        <div class="col col-lg-4"><button class="btn btn-primary float-left btn-devis" id="btnDevisSimu" > OPTENEZ UN DEVIS IMMEDIAT</button> </div>
+        <div class="col col-lg-4"><a href="#devisPerso"><button class="btn btn-primary float-right btn-devis" id="btnDevisPerso" >  DEVIS PERSONNALISÉ </button></a> </div>
+        
+        <!-- popup -->
+        <div class="bg-modal">
+          <div class="modal-content">
+            <h3>DEVIS</h3>
+            <form action="">
+              <label for="sel1">Selectionner</label>
+                <select class="form-control" name="" id="sel1">
+                  <option value="1">Standard</option>
+                  <option value="1">Haute de game</option>
+                  <option value="1">Très haute de game</option>
+                </select>
 
+                <i class="fas fa-plus-circle"></i>
+            </form>
+          </div>
+        </div>
+
+
+
+
+        <!-- <div class="col-lg-12 col-md-8 mx-auto overlaye" id="overlay">
+          <div class="popup" id="popup">
+            <h2>DEVIS 
+              <span id="btnClose" class="btnClose"> &times; </span> 
+            </h2>
+            <form action="">
+              <div class="devisOption">
+                <label for="">Selectionnez</label>
+                <select class="form-control" name="" id="sel1">
+                  <option value="1">Standard</option>
+                  <option value="1">Haute de game</option>
+                  <option value="1">Très haute de game</option>
+                </select>
+              </div>
+            </form>
+            <i class="fas fa-plus-circle"></i>
+          </div>
+        </div> -->
+        
+      </div>
     </div>
   </header>
 
@@ -83,8 +124,13 @@
       <div class="col-lg-8 col-md-10 mx-auto">
         <div class="post-preview">
           
+
           
-          <form id="simulateur">
+
+
+
+          
+          <!-- <form id="simulateur" class="devisForm">
               <h2 class="post-title">
                 OBTENIR UNE ESTIMATION DE PRIX DE CONSTRUCTION
               </h2>
@@ -122,11 +168,11 @@
               <div class="clearfix">
                 <input type="submit" class="btn btn-primary float-right" value="Valider" ></input>
               </div>
-            </form>
+            </form> -->
 
 
             <!-- DEVIS PERSONNALISÉ -->
-            <form id="devisPerso" style="display: none">
+            <!-- <form id="devisPerso" class="devisForm">
 
               <h2 class="post-title">
                 DEVIS PERSONNALISÉ
@@ -205,7 +251,7 @@
               <div class="clearfix">
                 <input type="submit" class="btn btn-primary float-right" value="Valider" ></input>
               </div>
-            </form>
+            </form> -->
 
         </div>
       </div>

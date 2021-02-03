@@ -1,7 +1,7 @@
 let togg1 = document.getElementById("btnDevisSimu")
 let togg2 = document.getElementById("btnDevisPerso");
 
-let d1 = document.getElementById("simulateur")
+let d1 = document.getElementById("overlay")
 let d2 = document.getElementById("devisPerso") 
 
 togg1.addEventListener("click", () => {
@@ -11,13 +11,17 @@ togg1.addEventListener("click", () => {
     } 
 })
 
-togg2.addEventListener("click", () => {
-    if(getComputedStyle(d2).display != "block") {
-        d2.style.display = "block";
-        d1.style.display = "none";
+// togg2.addEventListener("click", () => {
+//     if(getComputedStyle(d2).display != "block") {
+//         d2.style.display = "block";
+//         d1.style.display = "none";
 
-    }
-})
+//     }
+// })
+
+
+
+
 
 
 
