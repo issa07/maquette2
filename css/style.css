@@ -11,7 +11,7 @@
     position: absolute;
     top: 0;
     right: 14px;
-    font-size: 42px;
+    font-size: 45px;
     transform: rotate(45deg);
     /* cursor: pointer; */
 }
@@ -68,7 +68,7 @@
 input {
     width: 50%;
     display: block;
-    margin: 15px auto;
+    margin: 0 auto;
 }
 
 /* .formDevis {
@@ -80,3 +80,6 @@ input {
     transform: scale(1.1);
 }
 
+.formDevis {
+    font-size: 17px;
+}
