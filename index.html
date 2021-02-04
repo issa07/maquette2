@@ -79,7 +79,7 @@
         <div class="bg-modal">
           <div class="modal-content">
             <div class="close">+</div>
-            <h3>DEVIS</h3>
+            <h3>Devis</h3>
             
           <form action="" class="formDevis">
             <div class="row">
@@ -91,13 +91,22 @@
                   <option value="3">Très haute de game</option>
                 </select>  -->
                 <div class="form-group">
-                  <label for="devis">Selectionnez</label>
+                  <label for="devis">Par prestation</label> <br />
                   <select name="maçonnerie" id="maconnerie">
                     <optgroup label="Maçonnerie">
-                      <option value="maçonnerieMur">Maçonnerie murs</option>
+                      <option value="maçonnerieMur">Maçonnerie murs </option>
                       <option value="maçonnerieExterieur">Maçonnerie extérieur</option>
                     </optgroup>
+                    <optgroup label="Platrerie isolation">
+                      <option value="doublagePlatreCloison">doublage Platre et Cloison</option>
+                      <option value="plafond">Plafond</option>
+                    </optgroup>
+                    <optgroup label="Rêvetement mur/plafond">
+                      <option value="PeintureEtEnduits">Peinture et Enduits </option>
+                      <option value="AutresRêvetemens">Autres rêvetemens</option>
+                    </optgroup>
                   </select>
+                  <i class="fas fa-times"></i>
                 </div>
               </div>
   
@@ -108,7 +117,6 @@
               </div>
 
             </div>
-
               <!-- <a href="" class="button">Valider</a> -->
               <i class="fas fa-plus-circle add" id="add">Ajouter</i>
               <br />
