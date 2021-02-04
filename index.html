@@ -80,25 +80,41 @@
           <div class="modal-content">
             <div class="close">+</div>
             <h3>DEVIS</h3>
-            <!-- <form action="">
-              <label for="sel1">Selectionner</label>
+            
+          <form action="" class="formDevis">
+            <div class="row">
+              <div class="col-lg-6 select-div" id="divForSelect">
+                <!-- <label for="sel1">Selectionner</label>
                 <select class="testform-control" name="" id="sel1">
                   <option value="1">Standard</option>
                   <option value="2">Haute de game</option>
                   <option value="3">Très haute de game</option>
-                </select> -->
-
+                </select>  -->
+                <div class="form-group">
+                  <label for="devis">Selectionnez</label>
+                  <select name="maçonnerie" id="maconnerie">
+                    <optgroup label="Maçonnerie">
+                      <option value="maçonnerieMur">Maçonnerie murs</option>
+                      <option value="maçonnerieExterieur">Maçonnerie extérieur</option>
+                    </optgroup>
+                  </select>
+                </div>
+              </div>
+  
+              <div class="col-lg-6 mx-auto">
                 <input type="text" placeholder="Nom" name="name">
                 <input type="email" placeholder="E-mail" name="email">
                 <input type="tel" placeholder="Téléphone" name="tel">
+              </div>
 
-                <!-- <a href="" class="button">Valider</a> -->
-                <i class="fas fa-plus-circle" id="add">Ajouter</i>
-                <br />
-                <input type="submit" class="btn btn-primary btn-valider-popup" value="Valider"></input>
+            </div>
 
-                <br />
-              </form>
+              <!-- <a href="" class="button">Valider</a> -->
+              <i class="fas fa-plus-circle add" id="add">Ajouter</i>
+              <br />
+              <input type="submit" class="btn btn-primary btn-valider-popup" value="Valider"></input>
+
+            </form>
           </div>
         </div>
 
@@ -290,6 +306,7 @@
 
   <!-- Simulateur de devis -->
   <script src="js/simulateur.js"></script>
+  <script src="js/jquery.js"></script>
 
 </body>
 

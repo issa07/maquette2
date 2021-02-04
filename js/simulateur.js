@@ -37,9 +37,9 @@ btnAdd.addEventListener('click', () => {
     // code
 });
 
-btnCancel.addEventListener('click', () => {
-    // code
-});
+// btnCancel.addEventListener('click', () => {
+//     // code
+// });
 
 
 

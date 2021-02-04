@@ -16,9 +16,9 @@
     /* cursor: pointer; */
 }
 
-.devisForm {
+/* .devisForm {
     display: none;
-}
+} */
 
 
 /* .overlaye {
@@ -47,8 +47,10 @@
     background-color: black;
     /* opacity: 0.7; */
     background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
+    position: fixed;
     top: 0;
+    /* position: relative;
+    top: 100px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,13 +58,12 @@
 }
 .modal-content {
     width: 800px;
-    height: 400px;
-    background-color: white;
-    border-radius: 4px;
+    /* height: 400px;  */
+    background-color: rgb(211, 200, 200);
+    border-radius: 6px;
     text-align: center;
     padding: 20px;
     position: relative;
-
 }
 input {
     width: 50%;
@@ -70,9 +71,9 @@ input {
     margin: 15px auto;
 }
 
-.form-control {
-    width: 50%;
-}
+/* .formDevis {
+    width: 150%;
+} */
 .fa-plus-circle:hover {
     transition: 0.3s;
     cursor: pointer;
