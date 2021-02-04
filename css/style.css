@@ -4,6 +4,17 @@
     bottom: 220px;
     margin-top: 80px;
 }
+.btn-valider-popup {
+    width: 150px;
+}
+.close {
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    /* cursor: pointer; */
+}
 
 .devisForm {
     display: none;
@@ -33,13 +44,15 @@
 .bg-modal {
     width: 100%;
     height: 100%;
-    /* background-color: black; */
+    background-color: black;
     /* opacity: 0.7; */
+    background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
     top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 .modal-content {
     width: 800px;
@@ -48,7 +61,21 @@
     border-radius: 4px;
     text-align: center;
     padding: 20px;
+    position: relative;
+
+}
+input {
+    width: 50%;
+    display: block;
+    margin: 15px auto;
 }
 
-
+.form-control {
+    width: 50%;
+}
+.fa-plus-circle:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    transform: scale(1.3);
+}
 

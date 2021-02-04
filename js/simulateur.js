@@ -20,6 +20,30 @@ togg1.addEventListener("click", () => {
 // })
 
 
+// Click for Popup
+document.getElementById("btnDevisSimu").addEventListener('click', function() {
+    document.querySelector('.bg-modal').style.display = "flex";
+});
+
+document.querySelector('.close').addEventListener('click', function() {
+    document.querySelector('.bg-modal').style.display = "none";
+});
+
+
+// Button add 
+let btnAdd = document.querySelector('#add')
+
+btnAdd.addEventListener('click', () => {
+    // code
+});
+
+btnCancel.addEventListener('click', () => {
+    // code
+});
+
+
+
+
 
 
 

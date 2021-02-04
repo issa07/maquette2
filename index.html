@@ -78,17 +78,27 @@
         <!-- popup -->
         <div class="bg-modal">
           <div class="modal-content">
+            <div class="close">+</div>
             <h3>DEVIS</h3>
             <form action="">
               <label for="sel1">Selectionner</label>
-                <select class="form-control" name="" id="sel1">
+                <select class="testform-control" name="" id="sel1">
                   <option value="1">Standard</option>
-                  <option value="1">Haute de game</option>
-                  <option value="1">Très haute de game</option>
+                  <option value="2">Haute de game</option>
+                  <option value="3">Très haute de game</option>
                 </select>
 
-                <i class="fas fa-plus-circle"></i>
-            </form>
+                <input type="text" placeholder="Nom" name="name">
+                <input type="email" placeholder="E-mail" name="email">
+                <input type="tel" placeholder="Téléphone" name="tel">
+
+                <!-- <a href="" class="button">Valider</a> -->
+                <i class="fas fa-plus-circle" id="add">Ajouter</i>
+                <br />
+                <input type="submit" class="btn btn-primary btn-valider-popup" value="Valider"></input>
+
+                <br />
+              </form>
           </div>
         </div>
 
