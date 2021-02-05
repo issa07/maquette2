@@ -39,7 +39,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="index.html">OISE BTP</a>
+      <a class="navbar-brand" href="index.html"><img src="img/oise-btp.png" alt="" class="img"></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -92,7 +92,7 @@
                 </select>  -->
                 <div class="form-group">
                   <label for="devis">Par prestation</label> <br />
-                  <select name="maçonnerie" id="maconnerie">
+                  <select name="maçonnerie" class="options">
                     <optgroup label="Maçonnerie">
                       <option value="maçonnerieMur">Maçonnerie murs </option>
                       <option value="maçonnerieExterieur">Maçonnerie extérieur</option>
@@ -103,7 +103,7 @@
                       <option value="plafond">Plafond</option>
                     </optgroup>
                     <optgroup label="Rêvetement sol/mur/plafond">
-                      <option value="peintureEtEnduits">Peinture mur, plafond, boiseries </option>
+                      <option value="peintureMur">Peinture mur, plafond, boiseries </option>
                       <option value="carlageSol">Carlage sol</option>
                       <option value="parquet">Parquet (neuf ou rénovation)</option>
                       <option value="autresRêvetemens">Autres rêvetemens</option>
@@ -113,17 +113,23 @@
                       <option value="nettoyageFacade">Nettoyage de façade</option>
                     </optgroup>
                   </select>
+
+                  <div id="output">
+                    <!-- <input type="number" placeholder="Surface en m²"> -->
+                  </div>
                   <!-- <i class="fas fa-times"></i> -->
                 </div>
-                <div class="select-div"></div>
-
+                <div class="select-div">
+                </div>
+                
+<!-- 
                 <div class="form-group input-saisie">
                   <label for="usr">Surface habitable (en m²)</label>
                   <input type="number" >
 
                   <label for="usr">Nombre de chambres</label>
                   <input type="number" >
-                </div>
+                </div> -->
 
               </div>
   
@@ -255,10 +261,10 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+  
   <!-- Custom scripts -->
   <!-- <script src="js/clean-blog.min.js"></script> -->
-
+  
   <!-- Simulateur de devis -->
   <script src="js/simulateur.js"></script>
   <script src="js/jquery.js"></script>

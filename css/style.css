@@ -1,3 +1,14 @@
+#mainNav {
+    height: 10%;
+    background: linear-gradient(115deg, rgb(216, 201, 172) 10%, transparent 90%);
+    /* box-shadow: 10px 10px 10px rgba(255, 181, 71, 0.507); */
+    /* background-color: rgb(250, 231, 207); */
+}
+.img {
+    width: 20%;
+    height: 20%;
+}
+
 .btn-devis {
     padding: 20px;
     position: relative;
@@ -57,7 +68,7 @@
     display: none;
 }
 .modal-content {
-    width: 800px;
+    width: 60%;
     /* height: 400px;  */
     background-color: rgb(211, 200, 200);
     border-radius: 6px;
@@ -83,3 +94,7 @@ input {
 .formDevis {
     font-size: 17px;
 }
+.form-group {
+    /* margin-right: 20px; */
+}
+
