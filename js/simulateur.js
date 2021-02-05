@@ -42,29 +42,6 @@ btnAdd.addEventListener('click', () => {
 // });
 
 
-
-// Select append other option
-// function random() {
-//     let a = document.getElementById('options').value;
-//     // || a === "maçonnerieMur" || a === "maçonnerieExterieur"
-//     if(a === "constructionMaison" ) {
-//         let array=["Testing", "Test"];
-//     } 
-//     else if(a === "peintureMur") {
-
-//     }
-
-//     let string = "";
-//     for(i=0; i<array.length; i++) {
-//         string = string + "<option>" + array[i] + "</option>";
-//     }
-
-//     document.getElementById('output').innerHTML = string;
-// }
-
-
-
-
 // function devisSim() {
 //     // let d1 = document.getElementById("simulateur"); 
 //     if(d1.style.display != "block") {
@@ -80,8 +57,6 @@ btnAdd.addEventListener('click', () => {
 //         d1.style.display = "none";
 //     }
 // }
-
-
 
 
 // function toggle1() {
