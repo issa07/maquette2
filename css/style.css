@@ -26,6 +26,17 @@
     transform: rotate(45deg);
     /* cursor: pointer; */
 }
+.fa-times {
+    position: relative;
+    left: 17px;
+    transition: 0.2s;
+    font-size: 19px;
+}
+.fa-times:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
 
 /* .devisForm {
     display: none;
