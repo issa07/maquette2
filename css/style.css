@@ -1,6 +1,10 @@
+/* body {
+    background-image: url("../img/batiment.jpeg");
+} */
+
 #mainNav {
     height: 10%;
-    background: linear-gradient(115deg, rgb(216, 201, 172) 10%, transparent 90%);
+    background: linear-gradient(115deg, rgba(255, 247, 229, 0.678) 5%, transparent 90%);
     /* box-shadow: 10px 10px 10px rgba(255, 181, 71, 0.507); */
     /* background-color: rgb(250, 231, 207); */
 }
@@ -36,7 +40,10 @@
     cursor: pointer;
     transform: scale(1.2);
 }
-
+/* .contact {
+    position: absolute;
+    right: 300px;
+} */
 
 /* .devisForm {
     display: none;
@@ -104,8 +111,5 @@ input {
 
 .formDevis {
     font-size: 17px;
-}
-.form-group {
-    /* margin-right: 20px; */
 }
 

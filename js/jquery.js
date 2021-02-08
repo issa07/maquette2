@@ -20,7 +20,7 @@ $(document).ready(function() {
       <optgroup label="Maçonnerie">
         <option value="maçonnerieMur">Maçonnerie murs </option>
         <option value="maçonnerieExterieur">Maçonnerie extérieur</option>
-        <option value="constructionMaison">Construction maison</option>
+        <option value="constructionMaison2">Construction maison</option>
       </optgroup>
       <optgroup label="Platrerie isolation">
         <option value="doublagePlatreCloison">doublage Platre et Cloison</option>
@@ -28,7 +28,7 @@ $(document).ready(function() {
       </optgroup>
       <optgroup label="Rêvetement sol/mur/plafond">
         <option value="peintureEtEnduits">Peinture mur, plafond, boiseries </option>
-        <option value="carlageSol">Carlage sol</option>
+        <option value="carrelageSol">Carrelage sol</option>
         <option value="parquet">Parquet (neuf ou rénovation)</option>
         <option value="autresRêvetemens">Autres rêvetemens</option>
       </optgroup>
@@ -49,41 +49,35 @@ $(document).ready(function() {
       console.log("Hello, ça marche")
     })
   
-
     // Element DOM ajouté après chargement de la page 
     // Champ pour << input >>
     $(`.option${(idOptionCount)}`).change(function() {
-   
       let inputElement = `<input type="number" class="newInput${(countId)}" min="1" max="5000" placeholder="Surface en m²">`
-      let inputElement2 = `<input type="number" class="newInput${(countId)}" min="1" max="5000" placeholder="Nombre de pièces">`
+      // let inputElement2 = `<input type="number" class="newInput${(countId)}" min="1" max="5000" placeholder="Nombre de pièces">`
       
-      if($(`.option${(idOptionCount)}`).val() == "constructionMaison") {
+      let val = $(`.option${(idOptionCount)}`).val() 
+      // Si value selectionnée == constructionMaison2, insérer inputElement après #output{id}
+      if(val == "constructionMaison2") {
           $(`#output${(idOutputCount)}`).append(inputElement);
           // console.log('ça marche bien')
       }
-      else if ($(this).val() != "constructionMaison") {
+      else if ($(this).val() != "constructionMaison2") {
           $(`.newInput${(countId)}`).remove();
           // $(`.newInput${(count)}`).remove();
-
           // console.log('Element selectionné est bien annulé')
       }
+      if(val == "carrelageSol" || val == "parquet" || val == "carlageExterieur" ) {
+        $(`#output${(idOutputCount)}`).append(inputElement);
+      }
     })  
-
   })
 
-  
-
-  
-
-
-
-
   $('.options').change(function() {
-  
     let inputElement = '<input type="number" class="newInput" min="1" max="5000" placeholder="Surface en m²">'
     let inputElement2 = '<input type="number" class="newInput" min="1" max="5000" placeholder="Nombre de pièces">'
     
-    if($(".options").val() === "constructionMaison") {
+    let val = $(".options").val() 
+    if(val === "constructionMaison") {
         $("#output").append(inputElement, inputElement2);
         // console.log('ça marche')
     }
