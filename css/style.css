@@ -132,11 +132,14 @@ input {
 }
 
 /* Etape 3 "surface" */
-.surface {
+.surface, #question-3, #etape-4, #etape-5 {
     display: none;
 }
 #errorEmptyArea {
     display: none;
+}
+.input-group {
+    width: 50%;
 }
 .input-group-addon {
     width: 50px;
@@ -148,7 +151,7 @@ input {
 .question.surface .field input[type=button] {
     height: 47px;
     width: 175px;
-    margin: 15px auto;
+    margin: 15px;
     display: block;
     background-color: orange;
 }

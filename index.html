@@ -243,10 +243,46 @@
                       La surface est obligatoire*
                     </p>
                     <div class="input-group">
-                      <input type="number" name="surface" class="form-control next-on-enter" min="1" placeholder="Ex : 100">
+                      <input type="number" name="surface" class="form-control input-surface" min="1" placeholder="Ex : 100">
                       <span class="input-group-addon">m²</span>
                     </div>
-                    <input type="button" class="btn next-slide" name="surface-area-btn" value="Suivant">
+                    <input type="button" class="btn next-slide" name="surface-area-btn" value="Suivant" onclick="etapeTrois()">
+                  </div>
+                </div>
+
+                <!-------------------- Etape 4 "code postal" ------------------->
+                <div class="question code-postal" id="etape-4" data-question="zip">
+                  <p class="question-label">
+                    Quel est le code postal de votre projet ?
+                    <br>
+                    <span>Vous pouvez ignorer l'adresse de votre projet en cliquant sur "Suivant"</span>
+                  </p>
+                  <div class="field">
+                    <div class="input-group">
+                      <input type="number" class="form-control code-postal" min="1" placeholder="Ex : 75000" name="zip">
+                    </div>
+                    <input type="button" class="btn next-slide" value="Suivant" name="zip-code-btnbtn">
+                  </div>
+                </div>
+
+
+                <!-------------------- Etape 5 "budget" ----------------------------->
+                <div class="question budget" id="etape-5" data-question="budget">
+                  <p class="question-label">Quel est votre budget tout compris (honnoraires, décoration, travaux) ?</p>
+                  <div class="middle-xs center-xs answer step5">
+                    <p class="desc">Moins de 50 000€ </p>
+                  </div>
+                  <div class="middle-xs center-xs answer step5">
+                    <p class="desc">Entre 51 000€ et 150 000€</p>
+                  </div>
+                  <div class="middle-xs center-xs answer step5">
+                    <p class="desc">Entre 151 000€ et 300 000€</p>
+                  </div>
+                  <div class="middle-xs center-xs answer step5">
+                    <p class="desc">Entre 301 000€ et 500 000€</p>
+                  </div>
+                  <div class="middle-xs center-xs answer step5">
+                    <p class="desc">Plus de 500 000€</p>
                   </div>
                 </div>
 
@@ -256,12 +292,6 @@
               <div class="back-container">
                 <button class="btn btn-light btn-back">Retour</button>
               </div>
-
-
-
-
-
-
 
               <!-- <select name="maçonnerie" class="options">
                   <optgroup label="Maçonnerie" class="_">
@@ -284,24 +314,8 @@
                   <option value="nettoyageFacade">Nettoyage de façade</option>
                 </optgroup>
               </select> -->
-              <div id="output"></div>
+              <!-- <div id="output"></div> -->
             </div>
-
-
-            <div class="select-div"></div>
-            
-            <!-- <div class="form-group input-saisie">
-              <label for="usr">Surface habitable (en m²)</label>
-              <input type="number" >
-
-              <label for="usr">Nombre de chambres</label>
-              <input type="number" >
-            </div> -->
-            <br />
-            <br />
-            <i class="fas fa-plus-circle add" id="add">Ajouter</i>
-            <br />
-            <br />
 
             <input type="submit" class="btn btn-primary btn-valider-popup" value="Valider"></input>
           </form>
@@ -323,7 +337,7 @@
   </footer> -->
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
+  <!-- <script src="vendor/jquery/jquery.min.js"></script> -->
   <!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
   
   <!-- Custom scripts -->

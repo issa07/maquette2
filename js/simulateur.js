@@ -1,22 +1,3 @@
-let togg1 = document.getElementById("btnDevisSimu")
-let togg2 = document.getElementById("btnDevisPerso");
-
-let d1 = document.getElementById("overlay")
-let d2 = document.getElementById("devisPerso") 
-
-// togg1.addEventListener("click", () => {
-    
-// })
-
-// togg2.addEventListener("click", () => {
-//     if(getComputedStyle(d2).display != "block") {
-//         d2.style.display = "block";
-//         d1.style.display = "none";
-
-//     }
-// })
-
-
 // Click for Popup
 document.getElementById("btnDevisSimu").addEventListener('click', function() {
     document.querySelector('.bg-modal').style.display = "flex";
@@ -28,15 +9,12 @@ document.querySelector('.close').addEventListener('click', function() {
 
 
 
-
-
 // POUR FORMULAIRE 
-// Etape 1
-const step1 = document.getElementById('construct')
-const step2 = document.getElementById('extension')
-const step3 = document.getElementById('surelevation')
-const step4 = document.getElementById('renovation')
-const step5 = document.getElementById('r&e')
+// const step1 = document.getElementById('construct')
+// const step2 = document.getElementById('extension')
+// const step3 = document.getElementById('surelevation')
+// const step4 = document.getElementById('renovation')
+// const step5 = document.getElementById('r&e')
 
 // Etape Une "projet"
 function etapeUne(detail) {
@@ -46,14 +24,13 @@ function etapeUne(detail) {
     document.querySelector('.etape-2').style.display = "block";
     document.querySelector('#etape-1').style.display = "none";
 
-    console.log(dataChoice)
-    console.log(detail.innerHTML)
+    // console.log(dataChoice)
+    // console.log(detail.innerHTML)
 }
 
 // Etape deux "type"
 function etapeDeux(detail) {
-    console.log(detail.innerHTML)
-
+    // console.log(detail.innerHTML)
     document.querySelector('.etape-2').style.display = "none";
     document.querySelector('#etape-3').style.display = "block";
 }
@@ -61,6 +38,13 @@ function etapeDeux(detail) {
 // Etape 3 "surface"
 function etapeTrois() {
 
+    let inputSurface = document.querySelector('.input-surface').value;
+
+    if(inputSurface !== "") {
+        document.querySelector('#etape-4').style.display = "block";
+        document.querySelector('#etape-3').style.display = "none";
+        
+    }
 }
 
 
