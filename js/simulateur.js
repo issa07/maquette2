@@ -36,7 +36,7 @@ function etapeTrois() {
     // Récupérer la valeur saisie de input
     let inputSurface = document.querySelector('.input-surface').value;
     
-    if(inputSurface !== "") {
+    if(inputSurface !== "" && inputSurface > 0) {
         console.log(inputSurface + " m²")
         document.querySelector('#etape-4').style.display = "block";
         document.querySelector('#etape-3').style.display = "none";
@@ -54,6 +54,11 @@ function etapeQuatre() {
         console.log(codePostal + " code postal")
         document.querySelector('#etape-5').style.display = "block";
         document.querySelector('#etape-4').style.display = "none";
+    } 
+    else if(codePostal === "") {
+        console.log("Null")
+        document.querySelector('#etape-5').style.display = "block";
+        document.querySelector('#etape-4').style.display = "none";
     }
 }
 
@@ -61,10 +66,20 @@ function etapeQuatre() {
 function etapeCinq(test) {
     // code...
     console.log(test.innerHTML)
+    document.querySelector('#etape-6').style.display = "block";
+    document.querySelector('#etape-5').style.display = "none";
 }
 
 
+// Etape 6 "formulaire de contact validation"
+const myForm = document.getElementById("myForm");
 
+if(myForm) {
+    myForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        console.log("Formulaire a éte bien envoyé !");
+    });
+}
 
 
 

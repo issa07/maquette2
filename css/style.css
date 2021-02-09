@@ -112,7 +112,7 @@ input {
     transform: scale(1.1);
 }
 
-.formDevis {
+.form-group {
     font-size: 15px;
 }
 
@@ -124,7 +124,7 @@ input {
 }
 
 /* Display non for steps */
-.surface, #question-3, #etape-4, #etape-5, #btn-valider {
+.surface, #question-3, #etape-4, #etape-5, #etape-6, #btn-valider {
     display: none;
 }
 /* .reserve {
@@ -139,6 +139,7 @@ input {
 /* Etape 3 "surface" */
 #errorEmptyArea {
     display: none;
+    color: red;
 }
 .input-group {
     width: 50%;

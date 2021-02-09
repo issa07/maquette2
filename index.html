@@ -106,7 +106,7 @@
 
           <!---------------- FORMULAIRE DE DEVIS -----------------
           ------------------------------------------------------->
-          <form action="" class="formDevis" method="get" >
+          <!-- <form action="" class="formDevis" method="get" > -->
             <div class="form-group">
 
               <!---------------------- Etape 1 "projet"------------------------>
@@ -286,6 +286,7 @@
                   </div>
                 </div>
 
+
                 <!--------------- Etape 6 "formulaire de contact" -------------------->
                 <div class="question question-form" id="etape-6" data-questio="form">
                   <p class="question-label">
@@ -296,7 +297,7 @@
                     <span>Vous n'avez pas rempli correctement les champs du formulaire !</span>
                     <br>
                   </div>
-                  <form action="" class="personalize-s2" method="POST" novalidate>
+                  <form action="" class="personalize-s2" method="POST" novalidate id="myForm">
                     <div class="form-error visible" data-input-id="form_name"><p>Votre nom est obligatoire !</p></div>
                     <div class="form-group">
                       <div class="row middle-xs">
@@ -333,6 +334,7 @@
                         </div>
                       </div>
                     </div>
+                    <input type="submit" class="btn btn-primary form-validation" value="Valider"></input>
                   </form>
                 </div>
 
@@ -346,7 +348,7 @@
             </div>
 
             <input type="submit" class="btn btn-primary btn-valider-popup" id="btn-valider" value="Valider"></input>
-          </form>
+          <!-- </form> -->
         </div>
       </div>
     </div>
