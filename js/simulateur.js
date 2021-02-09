@@ -9,14 +9,9 @@ document.querySelector('.close').addEventListener('click', function() {
 
 
 
-// POUR FORMULAIRE 
-// const step1 = document.getElementById('construct')
-// const step2 = document.getElementById('extension')
-// const step3 = document.getElementById('surelevation')
-// const step4 = document.getElementById('renovation')
-// const step5 = document.getElementById('r&e')
+/************* Functions POUR LE FORMULAIRE *****************/ 
 
-// Etape Une "projet"
+// Etape 1 "projet"
 function etapeUne(detail) {
     // Data-choice[a-e]
     let dataChoice = detail.getAttribute("data-choice")
@@ -25,12 +20,12 @@ function etapeUne(detail) {
     document.querySelector('#etape-1').style.display = "none";
 
     // console.log(dataChoice)
-    // console.log(detail.innerHTML)
+    console.log(detail.innerHTML)
 }
 
-// Etape deux "type"
+// Etape 2 "type"
 function etapeDeux(detail) {
-    // console.log(detail.innerHTML)
+    console.log(detail.innerHTML)
     document.querySelector('.etape-2').style.display = "none";
     document.querySelector('#etape-3').style.display = "block";
 }
@@ -38,17 +33,35 @@ function etapeDeux(detail) {
 // Etape 3 "surface"
 function etapeTrois() {
 
+    // Récupérer la valeur saisie de input
     let inputSurface = document.querySelector('.input-surface').value;
-
+    
     if(inputSurface !== "") {
+        console.log(inputSurface + " m²")
         document.querySelector('#etape-4').style.display = "block";
         document.querySelector('#etape-3').style.display = "none";
-        
+    } else {
+        document.querySelector('#errorEmptyArea').style.display = "block";
     }
 }
 
+// Etape 4 "code postal"
+function etapeQuatre() {
 
+    let codePostal = document.querySelector('#code-postal').value;
+    
+    if(codePostal !== "") {
+        console.log(codePostal + " code postal")
+        document.querySelector('#etape-5').style.display = "block";
+        document.querySelector('#etape-4').style.display = "none";
+    }
+}
 
+// Etape 5 "budget"
+function etapeCinq(test) {
+    // code...
+    console.log(test.innerHTML)
+}
 
 
 

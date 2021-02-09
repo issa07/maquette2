@@ -259,9 +259,9 @@
                   </p>
                   <div class="field">
                     <div class="input-group">
-                      <input type="number" class="form-control code-postal" min="1" placeholder="Ex : 75000" name="zip">
+                      <input type="number" name="zip" class="form-control code-postal" id="code-postal" min="1" placeholder="Ex : 75000" >
                     </div>
-                    <input type="button" class="btn next-slide" value="Suivant" name="zip-code-btnbtn">
+                    <input type="button" class="btn next-slide" value="Suivant" name="zip-code-btnbtn" onclick="etapeQuatre()">
                   </div>
                 </div>
 
@@ -269,19 +269,19 @@
                 <!-------------------- Etape 5 "budget" ----------------------------->
                 <div class="question budget" id="etape-5" data-question="budget">
                   <p class="question-label">Quel est votre budget tout compris (honnoraires, décoration, travaux) ?</p>
-                  <div class="middle-xs center-xs answer step5">
+                  <div class="middle-xs center-xs answer step5" onclick="etapeCinq(this)">
                     <p class="desc">Moins de 50 000€ </p>
                   </div>
-                  <div class="middle-xs center-xs answer step5">
+                  <div class="middle-xs center-xs answer step5" onclick="etapeCinq(this)">
                     <p class="desc">Entre 51 000€ et 150 000€</p>
                   </div>
-                  <div class="middle-xs center-xs answer step5">
+                  <div class="middle-xs center-xs answer step5" onclick="etapeCinq(this)">
                     <p class="desc">Entre 151 000€ et 300 000€</p>
                   </div>
-                  <div class="middle-xs center-xs answer step5">
+                  <div class="middle-xs center-xs answer step5" onclick="etapeCinq(this)">
                     <p class="desc">Entre 301 000€ et 500 000€</p>
                   </div>
-                  <div class="middle-xs center-xs answer step5">
+                  <div class="middle-xs center-xs answer step5" onclick="etapeCinq(this)">
                     <p class="desc">Plus de 500 000€</p>
                   </div>
                 </div>
