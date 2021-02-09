@@ -74,7 +74,6 @@
             </div>
          
 
-
             <!--------------- TESTING ------------------
             -------------------------------------------->
             <div class="col-lg-6 mx-auto"" id="divForSelect">
@@ -92,12 +91,12 @@
             </div>
             <!---------------- FIN DU CODE pour le formulaire de contact ------------------->
             
-
           </div>
         </div>
       </div>
     </div>
   </header>
+
   <!-- Main Content -->
   <div class="container">
     <div class="row">
@@ -177,8 +176,8 @@
                 </div>
               </div>
 
-              <!----------------------- Etape 2 "type"--------------------------->
               <div class="reserve">
+                <!----------------------- Etape 2 "type"--------------------------->
                 <div class="question format-4 etape-2" id="etape-2" data-question="type">
                   <p class="question-label">Pour quel type de bien ?</p>
                   
@@ -250,6 +249,7 @@
                   </div>
                 </div>
 
+
                 <!-------------------- Etape 4 "code postal" ------------------->
                 <div class="question code-postal" id="etape-4" data-question="zip">
                   <p class="question-label">
@@ -286,6 +286,56 @@
                   </div>
                 </div>
 
+                <!--------------- Etape 6 "formulaire de contact" -------------------->
+                <div class="question question-form" id="etape-6" data-questio="form">
+                  <p class="question-label">
+                    Envoyez votre demande à nos experts habitat, ils vous recontactent sous 24h avec un estimatif
+                  </p>
+                  <div id="erreur" class="block-error">
+                    <i class="icon-exclamation-sign"></i>
+                    <span>Vous n'avez pas rempli correctement les champs du formulaire !</span>
+                    <br>
+                  </div>
+                  <form action="" class="personalize-s2" method="POST" novalidate>
+                    <div class="form-error visible" data-input-id="form_name"><p>Votre nom est obligatoire !</p></div>
+                    <div class="form-group">
+                      <div class="row middle-xs">
+                        <div class="col-xs-5">
+                          <label for="form_name" class="control-label-required">
+                            Votre nom * 
+                          </label>
+                        </div>
+                        <div class="col-xs">
+                          <input type="text" id="form_name" class="field form-control error" required="required">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-error visible" data-input-id="form_email"><p>Une adresse email valide est obligatoire !</p> </div>
+                    <div class="form-group">
+                      <div class="row middle-xs">
+                        <div class="col-xs-5">
+                          <label class="control-label-required" for="form_email">Votre Email *</label>
+                        </div>
+                        <div class="col-xs">
+                          <input type="email" id="form_email" name="form[email]" required="required" class="field form-control error">
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="form-error visible" id="test" data-input-id="form_phone">Un numéro de téléphone valide est obligatoire !</div>
+                    <div class="form-group">
+                      <div class="row middle-xs widget">
+                        <div class="col-xs-5">
+                          <label class="control-label-required" for="form_phone">Votre Téléphone *</label>
+                        </div>
+                        <div class="col-xs">
+                          <input type="text" id="form_phone" name="form[phone]" required="required" class="field form-control error">
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
               </div>
 
               <!-- Button back -->
@@ -293,31 +343,9 @@
                 <button class="btn btn-light btn-back">Retour</button>
               </div>
 
-              <!-- <select name="maçonnerie" class="options">
-                  <optgroup label="Maçonnerie" class="_">
-                    <option value="maçonnerieMur">Maçonnerie murs </option>
-                    <option value="maçonnerieExterieur">Maçonnerie extérieur</option>
-                    <option value="constructionMaison">Construction maison</option>
-                  </optgroup>
-                <optgroup label="Platrerie isolation">
-                  <option value="doublagePlatreCloison">doublage Platre et Cloison</option>
-                  <option value="plafond">Plafond</option>
-                </optgroup>
-                <optgroup label="Rêvetement sol/mur/plafond">
-                  <option value="peintureMur">Peinture mur, plafond, boiseries </option>
-                  <option value="carrelageSol">Carrelage sol</option>
-                  <option value="parquet">Parquet (neuf ou rénovation)</option>
-                  <option value="autresRêvetemens">Autres rêvetemens</option>
-                </optgroup>
-                <optgroup label="Extérieur & Toitures">
-                  <option value="carlageExterieur">Carlage Extérieur </option>
-                  <option value="nettoyageFacade">Nettoyage de façade</option>
-                </optgroup>
-              </select> -->
-              <!-- <div id="output"></div> -->
             </div>
 
-            <input type="submit" class="btn btn-primary btn-valider-popup" value="Valider"></input>
+            <input type="submit" class="btn btn-primary btn-valider-popup" id="btn-valider" value="Valider"></input>
           </form>
         </div>
       </div>

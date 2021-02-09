@@ -122,6 +122,11 @@ input {
 .answer:hover {
     color: rgb(211, 159, 90);
 }
+
+/* Display non for steps */
+.surface, #question-3, #etape-4, #etape-5, #btn-valider {
+    display: none;
+}
 /* .reserve {
     display: none;
 } */
@@ -132,9 +137,6 @@ input {
 }
 
 /* Etape 3 "surface" */
-.surface, #question-3, #etape-4, #etape-5 {
-    display: none;
-}
 #errorEmptyArea {
     display: none;
 }
@@ -159,3 +161,14 @@ input {
     color: white;
     background-color: rgb(196, 133, 18);
 }
+
+
+/* Etape 6 "formulaire de contact" */
+.form-error {
+    color: red;
+    display: none;
+}
+
+
+
+
