@@ -10,7 +10,7 @@
   <title>Devis en ligne</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
 
   <!-- Custom fonts  -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -109,13 +109,166 @@
           ------------------------------------------------------->
           <form action="" class="formDevis" method="get" >
             <div class="form-group">
-              <label for="devis">Par prestation</label> <br />
-              <select name="maçonnerie" class="options">
-                <optgroup label="Maçonnerie">
-                  <option value="maçonnerieMur">Maçonnerie murs </option>
-                  <option value="maçonnerieExterieur">Maçonnerie extérieur</option>
-                  <option value="constructionMaison">Construction maison</option>
-                </optgroup>
+
+              <!---------------------- Etape 1 "projet"------------------------>
+              <div class="question current format-4" data-question="project" id="etape-1">
+                <p class="question-label">Quel est votre projet ?</p>
+                <div class="form"> 
+                  <!-- Option 1-->
+                  <div class="row midle-xs answer step1" data-choice="a" id="construction" onclick="etapeUne(this)">
+                    <div class="col-xs-3">
+                      <div class="picto">
+                        <!-- A remplir -->
+                        <!-- <img src="" alt="_"> -->
+                      </div>
+                    </div>
+                    <div class="col-xs">
+                      <p class="desc" id="desc">Construction</p>
+                    </div>
+                  </div>   
+                  <!-- Option 2 -->
+                  <div class="row midle-xs answer step1" data-choice="b" id="extension" onclick="etapeUne(this)">
+                    <div class="col-xs-3">
+                      <div class="picto">
+                        <!-- <img src="" alt="_"> -->
+                      </div>
+                    </div>
+                    <div class="col-xs">
+                      <p class="desc">Extansion</p>
+                    </div>
+                  </div> 
+
+                  <!-- Option 3 -->
+                  <div class="row midle-xs answer step1" data-choice="c" id="surelevation" onclick="etapeUne(this)">
+                    <div class="col-xs-3">
+                      <div class="picto">
+                        <!-- <img src="" alt="_"> -->
+                      </div>
+                    </div>
+                    <div class="col-xs">
+                      <p class="desc">Surélevation</p>
+                    </div>
+                  </div> 
+                  
+                  <!-- Option 4 -->
+                  <div class="row midle-xs answer step1" data-choice="d" id="renovation" onclick="etapeUne(this)">
+                    <div class="col-xs-3">
+                      <div class="picto">
+                        <!-- <img src="" alt="_"> -->
+                      </div>
+                    </div>
+                    <div class="col-xs">
+                      <p class="desc">Rénovation</p>
+                    </div>
+                  </div>  
+
+                  <!-- Option 5 -->
+                  <div class="row midle-xs answer step1" data-choice="e" id="r&e" onclick="etapeUne(this)">
+                    <div class="col-xs-3">
+                      <div class="picto">
+                        <!-- <img src="" alt="_"> -->
+                      </div>
+                    </div>
+                    <div class="col-xs">
+                      <p class="desc">Rénovation & Extension</p>
+                    </div>
+                  </div>  
+
+                </div>
+              </div>
+
+              <!----------------------- Etape 2 "type"--------------------------->
+              <div class="reserve">
+                <div class="question format-4 etape-2" id="etape-2" data-question="type">
+                  <p class="question-label">Pour quel type de bien ?</p>
+                  
+                  <!-- Option 1 -->
+                  <div class="row middle-xs answer" id="maison" onclick="etapeDeux(this)">
+                    <div class="col-xs-3">
+                      <div class="picto">
+                        <!-- <img src="" alt="_"> -->
+                      </div>
+                    </div>
+                    <div class="col-xs">
+                      <p class="desc">Maison</p>
+                    </div>
+                  </div>
+                
+                  <!-- Option 2 -->
+                  <div class="row middle-xs answer" onclick="etapeDeux(this)">
+                    <div class="col-xs-3">
+                      <div class="picto">
+                        <!-- <img src="" alt="_"> -->
+                      </div>
+                    </div>
+                    <div class="col-xs">
+                      <p class="desc">Appartement</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Option 3 -->
+                  <div class="row middle-xs answer" onclick="etapeDeux(this)">
+                    <div class="col-xs-3">
+                      <div class="picto">
+                        <!-- <img src="" alt="_"> -->
+                      </div>
+                    </div>
+                    <div class="col-xs">
+                      <p class="desc">Bâtiment professionnel/commerce</p>
+                    </div>
+                  </div>
+
+                  <!-- Option 4 -->
+                  <div class="row middle-xs answer" onclick="etapeDeux(this)">
+                    <div class="col-xs-3">
+                      <div class="picto">
+                        <!-- <img src="" alt="_"> -->
+                      </div>
+                    </div>
+                    <div class="col-xs">
+                      <p class="desc">Autre (garage, bâtiment agricole, ...)</p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <!----------------------- Etape 3 "surface" ---------------------->
+                <div class="question surface" id="etape-3" data-question="surface">
+                  <p class="question label">
+                    Quelle est la surface de votre projet en m² ?
+                    <br />
+                  </p>
+                  <div class="field">
+                    <p id="errorEmptyArea" class="hide">
+                      La surface est obligatoire*
+                    </p>
+                    <div class="input-group">
+                      <input type="number" name="surface" class="form-control next-on-enter" min="1" placeholder="Ex : 100">
+                      <span class="input-group-addon">m²</span>
+                    </div>
+                    <input type="button" class="btn next-slide" name="surface-area-btn" value="Suivant">
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Button back -->
+              <div class="back-container">
+                <button class="btn btn-light btn-back">Retour</button>
+              </div>
+
+
+
+
+
+
+
+              <!-- <select name="maçonnerie" class="options">
+                  <optgroup label="Maçonnerie" class="_">
+                    <option value="maçonnerieMur">Maçonnerie murs </option>
+                    <option value="maçonnerieExterieur">Maçonnerie extérieur</option>
+                    <option value="constructionMaison">Construction maison</option>
+                  </optgroup>
                 <optgroup label="Platrerie isolation">
                   <option value="doublagePlatreCloison">doublage Platre et Cloison</option>
                   <option value="plafond">Plafond</option>
@@ -130,9 +283,11 @@
                   <option value="carlageExterieur">Carlage Extérieur </option>
                   <option value="nettoyageFacade">Nettoyage de façade</option>
                 </optgroup>
-              </select>
+              </select> -->
               <div id="output"></div>
             </div>
+
+
             <div class="select-div"></div>
             
             <!-- <div class="form-group input-saisie">
@@ -142,9 +297,12 @@
               <label for="usr">Nombre de chambres</label>
               <input type="number" >
             </div> -->
-
+            <br />
+            <br />
             <i class="fas fa-plus-circle add" id="add">Ajouter</i>
             <br />
+            <br />
+
             <input type="submit" class="btn btn-primary btn-valider-popup" value="Valider"></input>
           </form>
         </div>
@@ -166,10 +324,10 @@
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
   
   <!-- Custom scripts -->
-  <script src="js/clean-blog.min.js"></script>
+  <!-- <script src="js/clean-blog.min.js"></script> -->
   
   <!-- Simulateur de devis -->
   <script src="js/simulateur.js"></script>
