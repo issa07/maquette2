@@ -76,7 +76,7 @@ const myForm = document.getElementById("myForm");
 
 if(myForm) {
     myForm.addEventListener("submit", (e) => {
-        e.preventDefault();
+        // e.preventDefault();
         console.log("Formulaire a éte bien envoyé !");
     });
 }

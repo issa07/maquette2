@@ -123,18 +123,14 @@ input {
     color: rgb(211, 159, 90);
 }
 
-/* Display non for steps */
-.surface, #question-3, #etape-4, #etape-5, #etape-6, #btn-valider {
+/* Display none for steps */
+.surface, .etape-2, #etape-3, #etape-4, #etape-5, #etape-6, #btn-valider {
     display: none;
 }
 /* .reserve {
     display: none;
 } */
 
-/* Etape 2 "type" */
-.etape-2 {
-    display: none;
-}
 
 /* Etape 3 "surface" */
 #errorEmptyArea {
